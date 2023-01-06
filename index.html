@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timur</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+                                <!-- Modal Window  -->
+    <div class="thank-layout">
+        <div class="thank-layout__thank">
+            <button class="thank-layout__close"></button>
+            <h1 class="thank-layout__text">Спасибо! Заявка отправлена.</h1>
+        </div>
+    </div>
+
+    <div class="modalwindow">
+        <div class="modalwindow__block">
+            <button class="modalwindow__close"></button>
+            <h3>Оставьте заявку</h3>
+            <form method="#" class="forms">
+                <div class="forms-field">
+                    <input type="text" placeholder="Например, Даниил" class="name" >
+                </div>
+                <div class="forms__field">
+                    <input type="email" placeholder="Пример, alekceev@mail.ru" class="email">
+                </div>
+                <div class="forms__field">
+                    <input type="tel" class="phone">
+                </div>
+                <div class="forms__btn">
+                    <input type="submit" class="forms__submit" value="Отправить">
+                </div>
+            </form>    
+        </div>
+    </div> 
+
+                                <!-- Header Site  -->
+
+    <header class="header">
+        <div class="header__container flex">
+            
+            <a class="header__link" href="#">
+                <img class="header__logo" src="img/Сайт 1.svg" alt="логотип сайта">
+            </a>
+
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__li"><a class="nav__item" href="#" data-scroll=".services">Услуги</a></li>
+                    <li class="header__li"><a class="nav__item" href="#" data-scroll=".works">Мои работы</a></li>
+                    <li class="header__li"><a class="nav__item" href="#" data-scroll=".info">Обо мне</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header__button-wrap">
+                <button class="header__button btn">Заказать звонок</button>
+            </div>
+            
+            <div class="header__burger">
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+                                <!-- Main page  -->
+    <main class="main">
+        <section class="about">
+            <div class="about__container flex">
+                <div class="about__content flex">
+                    <h1 class="about__text">Тимур Гончаров</h1>
+                    <span class="about__info">Фронтенд-разработчик и Веб-Верстальщик</span>
+                    <button class="about__button btn">Подробнее</button>
+                </div>
+                <button id="arrow" class="about__arrow"></button>
+            </div>
+        </section>
+
+                                    <!-- Section: "Services"  -->
+        
+        <section class="services">
+            <img class="services__display elements" src="img/television.svg" alt="display">
+            <img class="services__pages elements" src="img/windows.svg" alt="Страницы">
+            <img class="services__smartphone-left elements" src="img/smartphone-left.svg" alt="Телефон с лупой">
+            <img class="services__smartphone-right elements" src="img/smartphone-right.svg" alt="Отзеркальный телефон с лупой">
+            
+            <div class="services__container flex">
+                <h2 class="services__title title">Чем я занимаюсь?</h2>
+                <div class="services__content flex">
+                    <div class="services__landing flex block">
+                        <img class="services__img" src="img/Landing.svg" alt="Сайт с версткой">
+                        <span class="services__text">Верстаю лендинг-страницы и сайтов любой сложности</span>
+                    </div>
+                    <div class="services__web flex block">
+                        <img class="services__img" src="img/web.svg" alt="Устройства">
+                        <span class="services__text">Адаптивная верстка под все устройства</span>
+                    </div>
+                    <div class="services__frontend flex block">
+                        <img class="services__img" src="img/frontend.svg" alt="Табличка">
+                        <span class="services__text">Фронтенд-разработка и программирование</span>
+                    </div>
+                    <div class="services__correction flex block">
+                        <img class="services__img" src="img/correction.svg" alt="Настройка сайта">
+                        <span class="services__text">Корректировка и доработка существующей вёрстки</span>
+                    </div>
+                </div>
+                <button id="arrowhead" class="services__arrow"></button>
+            </div>
+        </section>
+
+                                    <!-- Section: "My works"  -->
+
+        <section class="works">
+            <div class="works__container flex">
+                <h2 class="works__title title">Моё портфолио</h2>
+                
+                <div class="works__slider slider">
+                    
+                    <ul class="slider__items flex">
+                        <li class="slider__slide"><img src="img/Quiz.jpg" alt="Quiz"></li>
+                        <li class="slider__slide"><img src="img/Dart Web Service.png" alt="Dart Web Service"></li>
+                        <li class="slider__slide"><img src="img/Quiz.jpg" alt=""></li>
+                        <li class="slider__slide"><img src="img/Dart Web Service.png" alt=""></li>
+                    </ul>
+                    
+                    <ul class="slider__pagination">
+                        <li class="slider__page slider__page-active"></li>
+                        <li class="slider__page"></li>
+                        <li class="slider__page"></li>
+                    </ul>
+
+                    <div class="slider__content">
+                        <button class="slider__prev btnslider"></button>
+                        <button class="slider__next btnslider slider__next-active"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+                                    <!-- Section: "About me"  -->
+
+        <section class="info">
+            <div class="info__container">
+                <span class="info__tagvideo icon">&#60;video&#62;</span>
+                <span class="info__sqarebrackets icon">[ ]</span>
+                <span class="info__tag icon">&#60;/&#62;</span>
+                <span class="info__tagtwo icon">[ ]</span>
+                <span class="info__tagethree icon">&#60;video&#62;</span>
+                <span class="info__tagfour icon">&#60;/&#62;</span>
+                
+                <h2 class="info__title title">Обо мне</h2>
+                
+                <div class="info__content flex">
+                    <div class="info__video">
+                        <video class="info__player" width="755" height="386" src="video/Video.mp4" poster="img/poster.png"></video>
+                        <img class="info__play" src="img/play.png" alt="">
+                    </div>
+                    
+                    <div class="info__descr">
+                        <span class="info__name">В этом видео вы узнаете:</span>
+                            <ol>
+                                <li class="info__item">Кем я работаю</li>
+                                <li class="info__item">Сколько стоят мои услуги</li>
+                            </ol>
+                    </div>    
+                </div>
+            </div>
+        </section>
+    </main>
+                                <!-- Footer  -->
+
+    <footer class="footer">
+        
+        <div class="footer__container flex">
+            <ul class="footer__page">
+                <li> <a class="footer__item" href="#" data-scroll=".services">Услуги</a></li>
+                <li><a class="footer__item" href="#" data-scroll=".works">Мои работы </a></li>
+                <li><a class="footer__item" href="#" data-scroll=".info">Обо мне </a></li>
+            </ul>
+                    
+            <div class="footer__contacts flex">
+                <h3 class="footer__tittle">Мои контакты</h3>
+                <a href ="#" class="footer__phone">+7(905)-037-18-06</a>
+                <a href ="#" class="footer__mail">timgon032@mail.ru</a>
+            </div>
+            
+            <div class="footer__social flex">
+                <span class="footer__title">Социальные сети</span>
+                <div class="footer__socialmedia flex">
+                    <a class="footer__vk" href="https://vk.com/timgon"></a>
+                    <a class="footer__instagram" href="https://www.instagram.com/timikysgamer/"></a>
+                    <a class="footer__youtube" href="https://www.youtube.com/c/TimikysGame"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__copyright flex">
+            <span class="footer__name">&copy; Тимур Гончаров 2022</span>
+        </div>
+    </footer>
+</body>
+</html>
